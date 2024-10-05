@@ -15,11 +15,14 @@
             <li class="underline cursor-pointer">Ziglang</li>
             <li class="underline cursor-pointer">Kernel dev</li>
         </ul>
+        <button class="image">Check Github!</button>
     </div>
 </template>
 
 <script setup>
 import gsap from "gsap";
+
+const words = ref(["Ziglang", "Kernel Development", ""]);
 
 gsap.registerPlugin("ScrollTrigger");
 const scrollContainer = ref(); // Init container
